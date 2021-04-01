@@ -1,87 +1,124 @@
 {
-    "nodes": [
+  "nodes": [
+    {
+      "type": "event",
+      "name": "User Joins Server",
+      "guid": "49ebbc23-2903-4f05-ab69-bc9ecb4f067e",
+      "variables": {
+        "user": "newuser"
+      },
+      "outputs": [
         {
-            "type": "event",
-            "name": "User Joins Server",
-            "guid": "49ebbc23-2903-4f05-ab69-bc9ecb4f067e",
-            "variables": {
-                "user": "newuser"
-            },
-            "outputs": [
-                {
-                    "label": "responses",
-                    "connections": []
-                }
-            ],
-            "x": 99,
-            "y": 100,
-            "perms": []
-        },
-        {
-            "type": "event",
-            "name": "Any Message",
-            "guid": "49ebbc23-2903-4f05-ab69-bc9ecb4f8888",
-            "variables": {
-                "user": "msguser"
-            },
-            "outputs": [
-                {
-                    "label": "responses",
-                    "connections": []
-                }
-            ],
-            "x": 101,
-            "y": 499,
-            "perms": []
-        },
-        {
-            "type": "event",
-            "name": "User Kicked",
-            "guid": "69ebbc23-2903-4f05-ab69-bc9ecb4f067e",
-            "variables": {
-                "user": "kickuser"
-            },
-            "outputs": [
-                {
-                    "label": "responses",
-                    "connections": []
-                }
-            ],
-            "x": 99,
-            "y": 250,
-            "perms": []
-        },
-        {
-            "type": "event",
-            "name": "User Banned",
-            "guid": "77ebbc23-2003-4f05-ab69-bc9ecb4f067e",
-            "variables": {
-                "user": "banuser"
-            },
-            "outputs": [
-                {
-                    "label": "responses",
-                    "connections": []
-                }
-            ],
-            "x": 100,
-            "y": 375,
-            "perms": []
-        },
-        {
-            "type": "event",
-            "name": "Bot Initialization",
-            "guid": "0101bc23-2003-4f05-ab69-bc9ecb4f067e",
-            "variables": {},
-            "outputs": [
-                {
-                    "label": "responses",
-                    "connections": []
-                }
-            ],
-            "x": 100,
-            "y": 625,
-            "perms": []
+          "label": "responses",
+          "connections": [
+            "5b8f3cde-44a4-469e-bdbd-adef9550a894"
+          ]
         }
-    ]
+      ],
+      "x": 99,
+      "y": 100,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Any Message",
+      "guid": "49ebbc23-2903-4f05-ab69-bc9ecb4f8888",
+      "variables": {
+        "user": "msguser"
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "x": 101,
+      "y": 499,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "User Kicked",
+      "guid": "69ebbc23-2903-4f05-ab69-bc9ecb4f067e",
+      "variables": {
+        "user": "kickuser"
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "x": 99,
+      "y": 250,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "User Banned",
+      "guid": "77ebbc23-2003-4f05-ab69-bc9ecb4f067e",
+      "variables": {
+        "user": "banuser"
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "x": 100,
+      "y": 375,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Bot Initialization",
+      "guid": "0101bc23-2003-4f05-ab69-bc9ecb4f067e",
+      "variables": {},
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "x": 100,
+      "y": 625,
+      "perms": []
+    },
+    {
+      "type": "response",
+      "name": "Welcome message",
+      "guid": "5b8f3cde-44a4-469e-bdbd-adef9550a894",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "49ebbc23-2903-4f05-ab69-bc9ecb4f067e"
+        }
+      ],
+      "x": 415,
+      "y": 106,
+      "rtype": "Message",
+      "rsubtype": "Send Message",
+      "formdata": [
+        "${dbsVars.DefaultChannel.id}",
+        "Welcome, <@${tempVars.newuser.id}>",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelName",
+        "messageText",
+        "saveToVariable",
+        "saveToVariableType"
+      ]
+    }
+  ]
 }
