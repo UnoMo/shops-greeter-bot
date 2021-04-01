@@ -12,8 +12,8 @@
           ]
         }
       ],
-      "x": 148,
-      "y": 188
+      "x": 106,
+      "y": 181
     },
     {
       "type": "command",
@@ -70,7 +70,7 @@
         "1FFF57",
         "Help Menu",
         "",
-        "Bot Name Here",
+        "Shops Greeter",
         "",
         "",
         "This is the embed description, replace this with some info about your bot!",
@@ -104,8 +104,6 @@
       "guid": "5053a44d-4a5e-460a-974d-da0cc07aac7c",
       "reactionFields": [],
       "embedfields": [],
-      "saveToVariable": "",
-      "saveToVariableType": "temp",
       "outputs": [
         {
           "label": "next response",
