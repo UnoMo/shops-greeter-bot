@@ -11,7 +11,7 @@
         {
           "label": "responses",
           "connections": [
-            "5b8f3cde-44a4-469e-bdbd-adef9550a894"
+            "297ffc16-6a0c-4331-af95-07be5238cbfd"
           ]
         }
       ],
@@ -88,9 +88,11 @@
     {
       "type": "response",
       "name": "Welcome message",
-      "guid": "5b8f3cde-44a4-469e-bdbd-adef9550a894",
+      "guid": "297ffc16-6a0c-4331-af95-07be5238cbfd",
       "reactionFields": [],
       "embedfields": [],
+      "saveToVariable": "",
+      "saveToVariableType": "temp",
       "outputs": [
         {
           "label": "next response",
@@ -103,13 +105,13 @@
           "id": "49ebbc23-2903-4f05-ab69-bc9ecb4f067e"
         }
       ],
-      "x": 415,
-      "y": 106,
+      "x": 434,
+      "y": 92,
       "rtype": "Message",
       "rsubtype": "Send Message",
       "formdata": [
         "${dbsVars.DefaultChannel.id}",
-        "Welcome, <@${tempVars.newuser.id}>",
+        "Welcome, <@${tempVars.newuser.id}>.",
         "",
         "temp"
       ],

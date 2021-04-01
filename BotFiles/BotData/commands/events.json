@@ -9,7 +9,7 @@
           "category": "Message",
           "type": "Send Message",
           "channelname": "${dbsVars.DefaultChannel.id}",
-          "messagetext": "Welcome, <@${tempVars.newuser.id}>",
+          "messagetext": "Welcome, <@${tempVars.newuser.id}>.",
           "savetovariable": "",
           "savetovariabletype": "temp"
         }
